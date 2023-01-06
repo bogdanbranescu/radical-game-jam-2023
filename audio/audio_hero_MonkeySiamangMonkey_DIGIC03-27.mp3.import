@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/audio_hero_MonkeySiamangMonkey_DIGIC03-27.mp3-574eb16f39291178b7d21ed79a9fb9a3.mp3str"
+
+[deps]
+
+source_file="res://audio/audio_hero_MonkeySiamangMonkey_DIGIC03-27.mp3"
+dest_files=[ "res://.import/audio_hero_MonkeySiamangMonkey_DIGIC03-27.mp3-574eb16f39291178b7d21ed79a9fb9a3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
