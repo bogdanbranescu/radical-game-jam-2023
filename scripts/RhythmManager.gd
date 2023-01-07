@@ -47,3 +47,5 @@ func _on_Player_moved(move_timestamp):
 	if move_timestamp < latest_allowed or move_timestamp > earliest_upcoming_allowed:
 		print(beat_difference)
 		momentum += 10
+	else:
+		momentum -= 2

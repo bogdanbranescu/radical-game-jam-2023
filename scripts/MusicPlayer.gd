@@ -1,12 +1,11 @@
 extends AudioStreamPlayer
 
 
-# var a = 2
-# var b = "text"
+var song_index = 1
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
+	stream = load(globals.song_configs[song_index].file)
 	play()
 	
 
