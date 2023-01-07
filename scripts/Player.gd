@@ -1,4 +1,4 @@
-extends Sprite
+extends KinematicBody2D
 
 
 signal moved(at_timestamp)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://sprites/gauge_border.png" type="Texture" id=1]
 [ext_resource path="res://scripts/RhythmManager.gd" type="Script" id=2]
@@ -11,6 +11,9 @@
 [ext_resource path="res://scripts/World.gd" type="Script" id=9]
 [ext_resource path="res://scripts/MusicPlayer.gd" type="Script" id=10]
 [ext_resource path="res://audio/music/polychrombo - Pygmy Marmoset.wav" type="AudioStream" id=11]
+[ext_resource path="res://scenes/Hazard.tscn" type="PackedScene" id=12]
+
+[sub_resource type="CircleShape2D" id=1]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 9 )
@@ -37,11 +40,22 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Player" type="Sprite" parent="RhythmManager/Board"]
+[node name="Hazards" type="Node2D" parent="RhythmManager/Board"]
+position = Vector2( -80, -8 )
+
+[node name="Hazard" parent="RhythmManager/Board/Hazards" instance=ExtResource( 12 )]
+
+[node name="Player" type="KinematicBody2D" parent="RhythmManager/Board"]
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RhythmManager/Board/Player"]
+position = Vector2( 16, 16 )
+shape = SubResource( 1 )
+
+[node name="Player" type="Sprite" parent="RhythmManager/Board/Player"]
 texture = ExtResource( 7 )
 centered = false
 offset = Vector2( 0, -3 )
-script = ExtResource( 5 )
 
 [node name="Cheese" type="Sprite" parent="RhythmManager/Board"]
 position = Vector2( 176, 24 )
