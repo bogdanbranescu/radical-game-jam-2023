@@ -4,7 +4,6 @@ extends Node2D
 onready var note = load("res://scenes/Note.tscn")
 
 onready var timer = $TickTimer
-onready var beat_window = $BeatWindow
 onready var sfx_player = $TickSfxPlayer
 
 var prev_beat = OS.get_ticks_msec()

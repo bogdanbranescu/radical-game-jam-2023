@@ -1,14 +1,16 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://sprites/gauge_border.png" type="Texture" id=1]
 [ext_resource path="res://scripts/RhythmManager.gd" type="Script" id=2]
-[ext_resource path="res://audio/sound_ex_machina_Button_Tick.mp3" type="AudioStream" id=3]
+[ext_resource path="res://audio/sfx/sound_ex_machina_Button_Tick.mp3" type="AudioStream" id=3]
 [ext_resource path="res://sprites/background.png" type="Texture" id=4]
 [ext_resource path="res://scripts/Player.gd" type="Script" id=5]
 [ext_resource path="res://sprites/cheese.png" type="Texture" id=6]
 [ext_resource path="res://sprites/monkey.png" type="Texture" id=7]
 [ext_resource path="res://sprites/gauge_fill.png" type="Texture" id=8]
 [ext_resource path="res://scripts/World.gd" type="Script" id=9]
+[ext_resource path="res://scripts/MusicPlayer.gd" type="Script" id=10]
+[ext_resource path="res://audio/music/polychrombo - Pygmy Marmoset.wav" type="AudioStream" id=11]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 9 )
@@ -17,12 +19,14 @@ script = ExtResource( 9 )
 texture = ExtResource( 4 )
 centered = false
 
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+script = ExtResource( 10 )
+
 [node name="RhythmManager" type="Node2D" parent="."]
 script = ExtResource( 2 )
 
 [node name="TickTimer" type="Timer" parent="RhythmManager"]
-
-[node name="BeatWindow" type="Timer" parent="RhythmManager"]
 
 [node name="TickSfxPlayer" type="AudioStreamPlayer" parent="RhythmManager"]
 stream = ExtResource( 3 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sound_ex_machina_Button_Tick.mp3-5deb90010574920977c2a12e6612a23d.mp3str"
+
+[deps]
+
+source_file="res://audio/sfx/sound_ex_machina_Button_Tick.mp3"
+dest_files=[ "res://.import/sound_ex_machina_Button_Tick.mp3-5deb90010574920977c2a12e6612a23d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

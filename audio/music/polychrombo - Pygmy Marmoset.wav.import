@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/polychrombo - Pygmy Marmoset.wav-789ef98c767be5dbb2f69f3ecc5d5853.sample"
+
+[deps]
+
+source_file="res://audio/music/polychrombo - Pygmy Marmoset.wav"
+dest_files=[ "res://.import/polychrombo - Pygmy Marmoset.wav-789ef98c767be5dbb2f69f3ecc5d5853.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
