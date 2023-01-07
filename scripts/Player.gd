@@ -4,11 +4,6 @@ extends Sprite
 signal moved(at_timestamp)
 
 var line = 0
-# var move_direction = Vector2.ZERO
-
-# var current_cell_position = Vector2(0, 0)
-var min_cell_position = Vector2(0, 0);
-var max_cell_position = Vector2(5, 5);
 
 
 func _ready():
