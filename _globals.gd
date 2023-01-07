@@ -1,8 +1,12 @@
 extends Node
 
 
-var bpm = 100
-var input_window = 0.1
+var bpm = 80
+var beat_tolerance = 0.1
+
+var depletion_rate = 5
+
+var cell_size = 32
 
 
 # Called when the node enters the scene tree for the first time.
