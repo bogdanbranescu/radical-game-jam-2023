@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 signal moved(at_timestamp)
 
-var line = 0
+onready var sprite = $Sprite
 
 
 func _ready():
@@ -27,6 +27,11 @@ func get_input() -> Vector2:
 
 func _process(_delta):
 	var newMoveDir = get_input()
+
+	if newMoveDir.x == -1:
+		sprite.flip_h = true
+	elif newMoveDir.x == 1:
+		sprite.flip_h = false
 
 	
 	if newMoveDir != Vector2.ZERO:

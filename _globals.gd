@@ -1,7 +1,7 @@
 extends Node
 
 
-var bpm = 145
+var bpm = 95
 var beat_tolerance = 0.1
 
 var depletion_rate = 5

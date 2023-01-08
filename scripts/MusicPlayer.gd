@@ -1,7 +1,7 @@
 extends AudioStreamPlayer
 
 
-var song_index = 1
+var song_index = 0
 
 
 func _ready():
